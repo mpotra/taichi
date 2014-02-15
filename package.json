@@ -1,0 +1,23 @@
+{
+  "name": "taichi",
+  "description": "Template engine",
+  "version": "0.0.1",
+  "author": "Mihai Alexandru Potra <mike@mpotra.com>",
+  "dependencies": {
+  },
+  "devDependencies": {
+    "mocha": "~1.15.1",
+    "should": "~2.1.1"
+  },
+  "keywords": [
+    "taichi",
+    "template",
+    "parser",
+    "compiler"
+  ],
+  "repository": "git://github.com/mpotra/taichi",
+  "engines": {
+    "node": ">= 0.10.0"
+  },
+  "license": "GPL v3"
+}
