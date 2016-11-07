@@ -3,7 +3,17 @@
   "description": "Testing suite",
   "version": "0.1.0",
   "author": "Mihai Potra <mike@mpotra.com>",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "lint": "eslint index.js lib/",
+    "test": "node test/ | tap-spec",
+    "prepublish": "npm run lint && npm run test"
+  },
   "dependencies": {
+    "taichi-tape": "^0.1.0",
     "tape": "^4.6.2"
   },
   "keywords": [
@@ -16,9 +26,20 @@
     "spy",
     "mock"
   ],
-  "repository": "git://github.com/mpotra/taichi",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mpotra/taichi.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mpotra/taichi/issues"
+  },
+  "homepage": "https://github.com/mpotra/taichi#readme",
   "engines": {
     "node": ">= 6.0.0"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "eslint": "^3.9.1",
+    "tap-spec": "^4.1.1"
+  }
 }
